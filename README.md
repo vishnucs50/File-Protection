@@ -1,16 +1,20 @@
 # File-Protection
 File Protection System using Multi-factor Authentication
+
 Introduction
 There has been quite a number of challenges by PC users to restrict file access on their PC to certain users based on the privileged information that should be accessible. Often time, irrespective of how well the files are being masked in subfolders, unauthorized users still find their way to open these documents. Consequently, a file protection system is developed to address this concern
+
 Project Objectives
 1. Restrict access of important files to privileged users
 2. Implement a 2FA system to open sensitive documents on a user’s PC
 3. To use an OTP and password system to validate a user’s access to a file
+
 Project Scope
 1. Filesystems on Windows Operating System
 2. Filesystems on Linux OS (Ubuntu, Fedora, Red hat, CentOS)
 3. The use of python 2.7 /python 3.6
 4. Google SMTP server in TLS mode
+
 Project Procedures
 1. A modular approach was adopted in the planning, design, development and testing of the project before deploying.
 2. A user registration and storage system were developed to register new users by saving the username, email and hashed password in a file (Adhoc storage repo)
@@ -23,12 +27,14 @@ Project Procedures
 EE4723: Advanced Network Security Final Project
 Author: Bello Adesoji | Vishnu Kamaraj
 9. There are several conditions that have been integrated into the system which returns an error message for the user trying to access a file as detailed below:
+
 ➢ If a user decides not to login
 ➢ If a new user uses an already taken username
 ➢ If a user enters a username not found in the authentication file (server)
 ➢ If a user trying to login uses an incorrect password
 ➢ If a user enters an incorrect OTP
 ➢ If a user fails to adhere to the instruction of using character “Y” or “N” to determine their intention to proceed or not
+
 Results & Discussion
 After extensive work on all the respective modules and finally integration, the file protection system using 2FA was finally completed. A user can successfully create an account, login and receive a 6 digits code in order to access a privileged file. The time taken to execute the program is less than a minute and approximately 15 seconds to obtain receipt of the 6 digits OTP.
 Summary & Conclusion
